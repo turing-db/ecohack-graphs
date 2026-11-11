@@ -71,6 +71,8 @@ Claude reads `CLAUDE.md` and the TuringDB skill in `.claude/skills/turingdb/`. T
 
 ### norwood: the farm food web
 
+![Norwood schema: Animal, Plant and Guild nodes with depends on, via plant and in guild edges](docs/images/norwood.svg)
+
 Pocock, Evans and Memmott sampled 7 interaction networks on one farm at once:
 - plants and their flower visitors
 - aphids and two levels of parasitoid wasps
@@ -89,6 +91,8 @@ Questions: which plants are keystone species within 3 hops? Which species have a
 
 ### woodland_soil: restoring woodland, from soil to sound
 
+![Woodland soil schema: Site hub linked to land use, habitat, region, soil samples, plots, plants, trees and invertebrates](docs/images/woodland_soil.svg)
+
 The WrEN project surveyed 60 young woods planted on old farmland or industrial land in Scotland and England, plus ancient woods and rewilding sites. At each site:
 - soil bacteria and fungi diversity
 - ground plants
@@ -104,6 +108,8 @@ The WrEN project surveyed 60 young woods planted on old farmland or industrial l
 Questions: does former land use still show in the soil? Which young woods already look like ancient woodland? Which trees host insects found nowhere else? Does the soundscape track biodiversity? [Schema and details](docs/woodland_soil.md).
 
 ### welsh_rivers: chemistry, river life and the river network
+
+![Welsh rivers schema: stations, samples and determinands on the left, river reaches in the centre, invertebrate sites, surveys and taxa on the right](docs/images/welsh_rivers.svg)
 
 The graph covers three South Wales catchments:
 - 1.8 million water-quality measurements, 2000–2026, from rivers, sewage works, industrial outfalls, mine-water discharges and landfills

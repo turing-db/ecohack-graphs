@@ -1,5 +1,7 @@
 # norwood: the farm food web
 
+![Norwood schema](images/norwood.svg)
+
 **Use it for:** keystone species, extinction cascades, single points of failure, restoration planting.
 
 ## What the data is

@@ -1,5 +1,7 @@
 # woodland_soil: soil microbes, plants, trees, insects and sound in restored woodland
 
+![Woodland soil schema](images/woodland_soil.svg)
+
 **Use it for:** post-disturbance recovery, land-use legacy, planting advice, cheap monitoring proxies.
 
 ## What the data is

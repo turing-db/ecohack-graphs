@@ -1,5 +1,7 @@
 # welsh_rivers: river chemistry, river animals and the river network
 
+![Welsh rivers schema](images/welsh_rivers.svg)
+
 **Use it for:** pollution tracing, cause and effect between chemistry and biology, recovery, monitoring gaps, speed at scale.
 
 ## What the data is
