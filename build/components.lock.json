@@ -1,0 +1,20 @@
+{
+  "library": "turingdb-components",
+  "components": {
+    "tdb-client": {
+      "version": "a36ec76",
+      "install": "tc/tdb_client",
+      "hash": "8e9bc245a1bc555e"
+    },
+    "jsonl-bulk-builder": {
+      "version": "a36ec76",
+      "install": "tc/jsonl_bulk_builder",
+      "hash": "5ff310d1ac1ed3a6"
+    },
+    "tdb-server": {
+      "version": "a36ec76",
+      "install": "tc/tdb_server",
+      "hash": "763b07db64b65ac0"
+    }
+  }
+}

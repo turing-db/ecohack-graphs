@@ -1,0 +1,6 @@
+.venv
+.venv-build
+.turing
+sources
+out
+.git

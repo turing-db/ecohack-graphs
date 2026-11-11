@@ -1,0 +1,10 @@
+services:
+  turingdb:
+    build: .
+    ports:
+      - "6666:6666"
+      - "8080:8080"
+    volumes:
+      - turing:/app/.turing     # graphs stay imported between restarts
+volumes:
+  turing:

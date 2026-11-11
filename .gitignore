@@ -1,0 +1,8 @@
+.venv/
+.venv-build/
+.turing/
+sources/
+out/
+__pycache__/
+*.pyc
+.DS_Store
