@@ -135,7 +135,7 @@ Coding agents like Claude make the visualizer easy to change. Ask Claude to draw
 
 <p align="center">
   <img src="docs/images/custom_lanes.png" width="49%" alt="Dependency lanes showing who built, owns and repairs each transatlantic cable">
-  <img src="docs/images/custom_overlay.png" width="49%" alt="Network overlay highlighting an agent's traversal, reads and writes">
+  <img src="docs/images/custom_metabolic.png" width="49%" alt="Genome-scale metabolic graph of Cupriavidus necator with a panel of prewritten pathway queries">
 </p>
 
 ## Using it with Claude
