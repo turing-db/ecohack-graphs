@@ -131,12 +131,14 @@ docker compose exec turingdb uv run python queries/run.py norwood
 
 Coding agents like Claude make the visualizer easy to change. Ask Claude to draw your graph on a map, overlay paths and query results on the network, or add panels for your own analysis, and tailor it to your use case. These were each built that way on top of the same visualizer:
 
-<p align="center"><img src="docs/images/custom_globe.png" width="820" alt="Submarine cable network on a globe with chokepoint rankings and a graph view"></p>
+<p align="center"><img src="docs/images/custom_globe.png" width="820" alt="Submarine cable network drawn on a globe"><br>
+<em>A multi-hop supply chain modelled as a graph and drawn over the globe.</em></p>
 
-<p align="center">
-  <img src="docs/images/custom_lanes.png" width="49%" alt="Dependency lanes showing who built, owns and repairs each transatlantic cable">
-  <img src="docs/images/custom_metabolic.png" width="49%" alt="Genome-scale metabolic graph of Cupriavidus necator with a panel of prewritten pathway queries">
-</p>
+<p align="center"><img src="docs/images/custom_lanes.png" width="820" alt="Dependency lanes showing who builds, owns and repairs each cable"><br>
+<em>How different entities depend on each other: a dependency graph laid out as lanes.</em></p>
+
+<p align="center"><img src="docs/images/custom_metabolic.png" width="820" alt="Metabolic graph of Cupriavidus necator with a panel of pathway queries"><br>
+<em>Built at the previous Nucleate materials hackathon: the metabolism of a bacterium that turns CO₂ and hydrogen into bioplastic.</em></p>
 
 ## Using it with Claude
 
