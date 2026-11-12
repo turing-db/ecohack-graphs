@@ -123,6 +123,21 @@ docker compose up -d     # same ports: 6666 for Python, 8080 for the visualizer
 docker compose exec turingdb uv run python queries/run.py norwood
 ```
 
+## The visualizer
+
+`./start.sh` also starts the TuringDB visualizer at http://localhost:8080. Pick a graph, run a query, and explore the result as a network.
+
+<p align="center"><img src="docs/images/visualizer.gif" width="820" alt="The TuringDB visualizer exploring a power grid graph"></p>
+
+Coding agents like Claude make the visualizer easy to change. Ask Claude to draw your graph on a map, overlay paths and query results on the network, or add panels for your own analysis, and tailor it to your use case. These were each built that way on top of the same visualizer:
+
+<p align="center"><img src="docs/images/custom_globe.png" width="820" alt="Submarine cable network on a globe with chokepoint rankings and a graph view"></p>
+
+<p align="center">
+  <img src="docs/images/custom_map_path.png" width="49%" alt="Shortest path from Mumbai to Marseille drawn on a map and on the graph">
+  <img src="docs/images/custom_overlay.png" width="49%" alt="Network overlay highlighting an agent's traversal, reads and writes">
+</p>
+
 ## Using it with Claude
 
 The repo is set up for [Claude Code](https://claude.com/claude-code). Open the folder and ask in plain English:
