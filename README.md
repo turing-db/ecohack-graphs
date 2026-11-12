@@ -134,7 +134,7 @@ Coding agents like Claude make the visualizer easy to change. Ask Claude to draw
 <p align="center"><img src="docs/images/custom_globe.png" width="820" alt="Submarine cable network on a globe with chokepoint rankings and a graph view"></p>
 
 <p align="center">
-  <img src="docs/images/custom_map_path.png" width="49%" alt="Shortest path from Mumbai to Marseille drawn on a map and on the graph">
+  <img src="docs/images/custom_lanes.png" width="49%" alt="Dependency lanes showing who built, owns and repairs each transatlantic cable">
   <img src="docs/images/custom_overlay.png" width="49%" alt="Network overlay highlighting an agent's traversal, reads and writes">
 </p>
 
