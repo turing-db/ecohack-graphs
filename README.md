@@ -1,6 +1,6 @@
 ![EcoHack x TuringDB starter kit: three ready-to-run ecology graphs for the AI track](docs/images/banner.png)
 
-# EcoHack graphs
+# EcoHack 2026 graph starter kit
 
 Three ready-to-query graphs built from the EcoHack 2026 AI-track open datasets, running on [TuringDB](https://docs.turingdb.ai).
 
@@ -15,59 +15,6 @@ Each graph joins several datasets so you can ask **multi-hop** questions that ar
 - "Which sewage works and mine outfalls sit upstream of the river sites that lost their mayflies?"
 
 These run in milliseconds.
-
-## Quick start
-
-You need [uv](https://docs.astral.sh/uv/getting-started/installation/) and **macOS 15+ on Apple silicon, or Linux**.
-
-```bash
-git clone <this repo> && cd ecohack_graphs
-./start.sh
-```
-
-The first run imports the graphs, which takes about 10 seconds. Then:
-
-- **Visualizer:** open http://localhost:8080, pick a graph, and explore.
-- **Example queries:** `uv run python queries/run.py norwood`. Do the same for `woodland_soil` and `welsh_rivers`.
-- **Extinction cascade:** `uv run python queries/norwood_cascade.py "Cirsium arvense"`.
-- **Your own Python:**
-
-  ```python
-  from turingdb import TuringDB
-  c = TuringDB(host="localhost", port=6666)
-  c.set_graph("norwood")
-  c.query("MATCH (p:Plant)<-[:DEPENDS_ON*1..3]-(a:Animal) RETURN p.name, count(DISTINCT a) AS supported ORDER BY supported DESC LIMIT 5")
-  ```
-
-- **Stop:** `./stop.sh`. The graphs stay on disk, and the next `./start.sh` loads them in seconds.
-
-**On macOS 14 or older, an Intel Mac, or Windows**, there is no TuringDB wheel for your machine. Use Docker instead:
-
-```bash
-docker compose up -d     # same ports: 6666 for Python, 8080 for the visualizer
-```
-
-Then install the Python client on your machine, or run the examples inside the container:
-
-```bash
-docker compose exec turingdb uv run python queries/run.py norwood
-```
-
-## Using it with Claude
-
-The repo is set up for [Claude Code](https://claude.com/claude-code). Open the folder and ask in plain English:
-
-```bash
-cd ecohack_graphs && claude
-```
-
-> Start the graphs and tell me which plants on Norwood Farm are keystone species.
-
-> Which river sites lost the most pollution-sensitive invertebrates, and what discharges are upstream of them?
-
-> Do woods planted on old industrial land have different soil fungi from woods on old farmland? Make a chart.
-
-Claude reads `CLAUDE.md` and the TuringDB skill in `.claude/skills/turingdb/`. The skill holds the tested Cypher rules for TuringDB 3.1 and the schema of each graph. With them, Claude can start the server, write multi-hop queries, run them, and turn results into pandas tables and charts.
 
 ## The three graphs
 
@@ -126,19 +73,58 @@ The graph covers three South Wales catchments:
 
 Questions: which discharges are upstream of a declining site? How many invertebrate sites does each mine outfall reach? What is the river distance from an outfall to a site? Where are the monitoring gaps? [Schema and details](docs/welsh_rivers.md).
 
-## Repo layout
+## Quick start
 
-| Path | What |
-|---|---|
-| `graphs/*.jsonl.gz` | The three graphs, imported by `./start.sh` |
-| `docs/` | One page per graph: sources, schema, properties, questions, caveats |
-| `queries/*.cypher` | 10 tested example queries per graph, run with `queries/run.py` |
-| `queries/norwood_cascade.py` | Iterative extinction cascade |
-| `.claude/skills/turingdb/` | TuringDB 3.1 skill for Claude (tested dialect rules and recipes) |
-| `CLAUDE.md` | Instructions Claude follows in this repo |
-| `build/` | Scripts that rebuild every graph from the original downloads ([how](build/README.md)) |
-| `start.sh`, `stop.sh`, `Dockerfile` | Run TuringDB locally or in Docker |
-| `CITATIONS.md` | Licences and how to cite each dataset |
+You need [uv](https://docs.astral.sh/uv/getting-started/installation/) and **macOS 15+ on Apple silicon, or Linux**.
+
+```bash
+git clone <this repo> && cd ecohack_graphs
+./start.sh
+```
+
+The first run imports the graphs, which takes about 10 seconds. Then:
+
+- **Visualizer:** open http://localhost:8080, pick a graph, and explore.
+- **Example queries:** `uv run python queries/run.py norwood`. Do the same for `woodland_soil` and `welsh_rivers`.
+- **Extinction cascade:** `uv run python queries/norwood_cascade.py "Cirsium arvense"`.
+- **Your own Python:**
+
+  ```python
+  from turingdb import TuringDB
+  c = TuringDB(host="localhost", port=6666)
+  c.set_graph("norwood")
+  c.query("MATCH (p:Plant)<-[:DEPENDS_ON*1..3]-(a:Animal) RETURN p.name, count(DISTINCT a) AS supported ORDER BY supported DESC LIMIT 5")
+  ```
+
+- **Stop:** `./stop.sh`. The graphs stay on disk, and the next `./start.sh` loads them in seconds.
+
+**On macOS 14 or older, an Intel Mac, or Windows**, there is no TuringDB wheel for your machine. Use Docker instead:
+
+```bash
+docker compose up -d     # same ports: 6666 for Python, 8080 for the visualizer
+```
+
+Then install the Python client on your machine, or run the examples inside the container:
+
+```bash
+docker compose exec turingdb uv run python queries/run.py norwood
+```
+
+## Using it with Claude
+
+The repo is set up for [Claude Code](https://claude.com/claude-code). Open the folder and ask in plain English:
+
+```bash
+cd ecohack_graphs && claude
+```
+
+> Start the graphs and tell me which plants on Norwood Farm are keystone species.
+
+> Which river sites lost the most pollution-sensitive invertebrates, and what discharges are upstream of them?
+
+> Do woods planted on old industrial land have different soil fungi from woods on old farmland? Make a chart.
+
+Claude reads `CLAUDE.md` and the TuringDB skill in `.claude/skills/turingdb/`. The skill holds the tested Cypher rules for TuringDB 3.1 and the schema of each graph. With them, Claude can start the server, write multi-hop queries, run them, and turn results into pandas tables and charts.
 
 ## TuringDB in 60 seconds
 
