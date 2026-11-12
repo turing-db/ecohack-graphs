@@ -1,3 +1,5 @@
+![EcoHack x TuringDB starter kit: three ready-to-run ecology graphs for the AI track](docs/images/banner.png)
+
 # EcoHack graphs
 
 Three ready-to-query graphs built from the EcoHack 2026 AI-track open datasets, running on [TuringDB](https://docs.turingdb.ai).
