@@ -18,7 +18,7 @@ Most users are scientists, not database people. Answer in plain language and sho
 | `woodland_soil` | 84 restoration, ancient and rewilding sites: soil microbes, plants, trees, insects, soundscape | `docs/woodland_soil.md` | `queries/woodland_soil.cypher` |
 | `welsh_rivers` | 1.8M river chemistry measurements, river invertebrates and the river network for 3 South Wales catchments | `docs/welsh_rivers.md` | `queries/welsh_rivers.cypher` |
 
-Run examples: `uv run python queries/run.py <graph> [numbers]`.
+Run examples: `uv run python queries/run.py <graph> [numbers]` (or plain `python` if TuringDB was installed with pip and uv is not installed).
 
 ## Rules
 

@@ -75,18 +75,34 @@ Questions: which discharges are upstream of a declining site? How many invertebr
 
 ## Quick start
 
-You need [uv](https://docs.astral.sh/uv/getting-started/installation/) and **macOS 15+ on Apple silicon, or Linux**.
+Works on macOS 15+ with Apple silicon, and on Linux.
+
+**1. Install TuringDB**
 
 ```bash
-git clone <this repo> && cd ecohack_graphs
+pip install turingdb
+```
+
+Or with uv: `uv add turingdb`.
+
+**2. Get the graphs and start**
+
+```bash
+git clone https://github.com/turing-db/ecohack-graphs && cd ecohack-graphs
 ./start.sh
 ```
 
-The first run imports the graphs, which takes about 10 seconds. Then:
+The first run imports the graphs, which takes about 10 seconds.
+
+**Or let Claude do it.** Open [Claude Code](https://claude.com/claude-code) and ask:
+
+> Install TuringDB, clone https://github.com/turing-db/ecohack-graphs and start the graphs.
+
+Once it is running:
 
 - **Visualizer:** open http://localhost:8080, pick a graph, and explore.
-- **Example queries:** `uv run python queries/run.py norwood`. Do the same for `woodland_soil` and `welsh_rivers`.
-- **Extinction cascade:** `uv run python queries/norwood_cascade.py "Cirsium arvense"`.
+- **Example queries:** `python queries/run.py norwood`. Do the same for `woodland_soil` and `welsh_rivers`.
+- **Extinction cascade:** `python queries/norwood_cascade.py "Cirsium arvense"`.
 - **Your own Python:**
 
   ```python
@@ -98,15 +114,12 @@ The first run imports the graphs, which takes about 10 seconds. Then:
 
 - **Stop:** `./stop.sh`. The graphs stay on disk, and the next `./start.sh` loads them in seconds.
 
-**On macOS 14 or older, an Intel Mac, or Windows**, there is no TuringDB wheel for your machine. Use Docker instead:
+If you have uv installed, `./start.sh` uses it and sets up its own environment, so put `uv run` before the `python` commands above.
+
+**On macOS 14 or older, an Intel Mac, or Windows**, TuringDB doesn't install with pip. Use Docker instead:
 
 ```bash
 docker compose up -d     # same ports: 6666 for Python, 8080 for the visualizer
-```
-
-Then install the Python client on your machine, or run the examples inside the container:
-
-```bash
 docker compose exec turingdb uv run python queries/run.py norwood
 ```
 
@@ -115,7 +128,7 @@ docker compose exec turingdb uv run python queries/run.py norwood
 The repo is set up for [Claude Code](https://claude.com/claude-code). Open the folder and ask in plain English:
 
 ```bash
-cd ecohack_graphs && claude
+cd ecohack-graphs && claude
 ```
 
 > Start the graphs and tell me which plants on Norwood Farm are keystone species.

@@ -36,7 +36,7 @@ df = c.query("MATCH (t:Taxon {name: $n}) RETURN t.guild", {"n": "Bombus terrestr
 
 - After a server restart the graphs are on disk but not in memory. `./start.sh` loads them. In your own
   code, call `c.load_graph(name)` and catch `TuringDBException` if it is already loaded.
-- Run the examples with `uv run python queries/run.py <graph> [query numbers]`.
+- Run the examples with `uv run python queries/run.py <graph> [query numbers]`, or plain `python` when uv is not installed.
 
 ## 3. Before writing a query
 
