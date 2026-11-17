@@ -1,7 +1,7 @@
 ---
 name: turingdb
 description: >
-  Query, explore and extend the EcoHack TuringDB graphs (norwood, woodland_soil, welsh_rivers) with
+  Query, explore and extend the EcoHack TuringDB graphs (norwood, woodland_soil, welsh_rivers, river_foodweb) with
   TuringDB 3.1 and its Cypher dialect. TRIGGER when: the user asks a question about species, food webs,
   keystone species, soil microbes, woodland restoration, river chemistry, invertebrates, pollution or
   any of the three graphs; code imports `turingdb`; the user mentions TuringDB, Cypher or the visualizer;
@@ -29,7 +29,7 @@ Mac, or Windows. Use Docker instead: `docker compose up -d` (same ports). The se
 ```python
 from turingdb import TuringDB
 c = TuringDB(host="localhost", port=6666)   # 3.1: host name + port, NOT "http://..."
-c.set_graph("welsh_rivers")                 # norwood | woodland_soil | welsh_rivers
+c.set_graph("welsh_rivers")                 # norwood | woodland_soil | welsh_rivers | river_foodweb
 df = c.query("MATCH (s:Station) RETURN s.kind, count(s) AS n ORDER BY n DESC")   # -> pandas DataFrame
 df = c.query("MATCH (t:Taxon {name: $n}) RETURN t.guild", {"n": "Bombus terrestris"})  # parameters work
 ```
@@ -48,6 +48,7 @@ df = c.query("MATCH (t:Taxon {name: $n}) RETURN t.guild", {"n": "Bombus terrestr
 4. Edge directions in these graphs:
    - `norwood`: consumer `-[:DEPENDS_ON]->` resource. Find dependents by walking arrows backwards.
    - `welsh_rivers`: `-[:FLOWS_INTO]->` points downstream. Go upstream with `<-[:FLOWS_INTO*1..N]-`.
+   - `river_foodweb`: `-[:EATS]->` points from consumer to food, `-[:INFECTS]->` from parasite to host (`step` = order in the life cycle). Go down a food chain with `-[:EATS*1..5]->`. Links are synthetic (from published diet rules): say so when answering.
    - `woodland_soil`: `Site -> Plot -> Plant/TreeGenus/Invertebrate`, and `Invertebrate -[:FOUND_ON]-> TreeGenus`.
 
 ## 4. Cypher that works on 3.1

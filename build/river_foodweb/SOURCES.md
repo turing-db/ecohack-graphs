@@ -1,0 +1,137 @@
+# Sources
+
+Every URL cited in spec.json, with what it supports.
+
+- https://pisces-conservation.com/sdrhelp/originalbmwp.htm — Original BMWP family score table (all bmwp_score values)
+- https://pisces-conservation.com/sdrhelp/revisedbmwp.htm — Revised BMWP table, first column repeats original scores; confirms Elmidae, Scirtidae, Calopterygidae spellings
+- https://www.freshwaterecology.info/ — European freshwater trait database (feeding types) used for genus-level invertebrate feeding groups
+- https://macroinvertebrates.org/taxa-info/trichoptera-larva/rhyacophilidae/rhyacophila — Rhyacophila larvae are free-living predators
+- https://macroinvertebrates.org/taxa-info/diptera-larva/athericidae/atherix — Atherix larvae are piercing predators of mayflies, amphipods, caddis
+- https://typeset.io/pdf/the-trophic-ecology-of-freshwater-gammarus-spp-crustacea-1rq8xl53p6.pdf — Review of Gammarus trophic ecology: shredder/facultative collector whose diet extends to animal prey
+- https://research.ucc.ie/en/publications/diet-of-idinocras-cephalotesi-and-iperla-bipunctatai-plecoptera-p/ — Dinocras cephalotes and Perla bipunctata diet dominated by Baetis rhodani and chironomids (Irish stream)
+- https://bioone.org/journals/the-canadian-entomologist/volume-139/issue-3/n06-005/Diet-of-Dinocras-cephalotes-and-Perla-marginata-Plecoptera--Perlidae/10.4039/n06-005.full — Perlid gut contents: few prey taxa dominate, detritus in small instars
+- https://agris.fao.org/search/en/records/65de565e0f3e94b9e5cdbb10 — Elliott: diel feeding of four carnivorous stoneflies; Simuliidae and Chironomidae dominate guts
+- https://dissem.in/p/28923456/shift-from-a-herbivorous-to-a-carnivorous-diet-during-the-larval-development-of-some-rhyacophila-species-trichoptera — Rhyacophila: early instars eat diatoms/algae, later instars strictly carnivorous
+- https://journal.fi/entomolfennica/article/view/84553 — Cordulegaster boltonii larvae: opportunistic predators of aquatic insects, crustaceans, annelids, molluscs
+- https://core.ac.uk/works/8849139 — Broadstone Stream (England): C. boltonii nymph preyed on virtually every taxon in the web
+- https://en.wikipedia.org/wiki/Erpobdella_octoculata — Erpobdella octoculata eats chironomid larvae and oligochaetes, swallowed whole
+- https://en.wikipedia.org/wiki/Glossiphoniidae — Some glossiphoniids feed on oligochaetes and freshwater snails rather than blood
+- https://en.wikipedia.org/wiki/Piscicola_geometra — Piscicola geometra blood-feeds on salmon, trout, eel, gudgeon, perch and other fish
+- https://landcareresearch.co.nz/tools-and-resources/identification/freshwater-invertebrates-guide/identification-guide-what-freshwater-invertebrate-is-this/no-jointed-legs/molluscs/snails/mud-snail-potamopyrgus — Potamopyrgus placed in Tateidae; grazes biofilm
+- https://en.wikipedia.org/wiki/New_Zealand_mud_snail — Potamopyrgus antipodarum introduced to Britain (recorded since 1859)
+- https://www.gbif.org/species/2226990 — Pacifastacus leniusculus classified in Astacidae (not Cambaridae)
+- https://www.fws.gov/taxonomic-tree/21452 — Taxonomic tree: Pacifastacus in Astacidae, superfamily Astacoidea
+- https://waterways.org.uk/restoration_hub/environmental-toolkit/signal-crayfish — Signal crayfish eat fish and amphibian eggs, tadpoles, juvenile fish, invertebrates, detritus, vegetation
+- https://eprints.lancs.ac.uk/79343/2/Wood_et_al_MS_Final_1_.pdf — Signal crayfish reduce macrophyte biomass and richness in streams
+- https://www.kmae-journal.org/10.1051/kmae/2013047 — White-clawed crayfish: omnivore on invertebrates, plants, water mosses, detritus; juveniles more animal prey
+- https://en.wikipedia.org/wiki/Austropotamobius_pallipes — White-clawed crayfish: only native UK crayfish, endangered, persists in eastern Wales, killed by plague from signal crayfish
+- https://orca.cardiff.ac.uk/id/eprint/97597 — James et al. 2017: A. astaci in 13 of 23 UK signal crayfish populations; threat to white-clawed crayfish
+- https://www.gov.uk/government/publications/gyrodactylus-salaris-gs — Great Britain is free of Gyrodactylus salaris (notifiable) — excluded
+- https://publications.naturalengland.org.uk/file/111010 — Pearl mussel glochidia develop only on Atlantic salmon or brown trout (usually 0+ fry)
+- https://naturalresources.wales/about-us/news-and-blogs/blogs/4r4l-freshwater-pearl-mussel-work?lang=en — NRW Welsh pearl mussel work: glochidia encyst on juvenile trout gills
+- https://www.gov.scot/publications/diseases-of-wild-and-farmed-finfish/pages/diplostomum-spathaceum — Diplostomum spathaceum: Lymnaea snail -> fish eye lens -> gull/fish-eating bird
+- https://en.wikivet.net/Diplostomum_spathacaeum — Diplostomum life cycle summary
+- https://complete.bioone.org/journals/journal-of-wildlife-diseases/volume-9/issue-4/0090-3558-9.4.362/DIPLOSTOMOSIS-IN-NORTH-PARK-COLORADO-1/10.7589/0090-3558-9.4.362.full — Gulls and common mergansers (goosander) as Diplostomum definitive hosts
+- https://bioinfo.bioimages.org.uk/html/Tylodelphys_clavata.htm — Tylodelphys clavata in eye humour of UK perch; adults in grebes
+- https://folia.paru.cas.cz/pdfs/fol/2025/01/08.pdf — T. clavata cercariae from Radix auricularia and Ampullaceana (Radix) balthica
+- https://en.wikipedia.org/wiki/Pomphorhynchus_laevis — Pomphorhynchus: Gammarus pulex intermediate host; chub and barbel main definitive hosts; minnow in isolated waters
+- https://thebarbelsociety.co.uk/?p=6270 — Environment Agency mapping of orange-spotted (Pomphorhynchus-infected) shrimps in UK rivers
+- https://www.cambridge.org/core/journals/parasitology/article/abs/ecology-of-echinorhynchus-truttae-schrank-1788-acanthocephala-in-a-trout-stream-in-north-wales/BA8F1EC1400CAAFFF6D64C18070A4908 — Awachie: Echinorhynchus truttae in Gammarus pulex and brown trout, North Wales stream
+- https://www-cambridge-org.ezproxyberklee.flo.org/core/services/aop-cambridge-core/content/view/C1CD0E23CC13EDD078293F9BB3D0BF6F/S0031182012001552a.pdf/manipulative-parasites-may-not-alter-intermediate-host-distribution-but-still-enhance-their-transmission-field-evidence-for-increased-vulnerability-to-definitive-hosts-and-non-host-predator-avoidance.pdf — E. truttae-infected Gammarus more vulnerable to bullhead (Cottus gobio), a definitive host
+- https://bioone.org/journals/Journal-of-Parasitology/volume-93/issue-4/GE-1093R.1/EFFECTS-OF-ACANTHOCEPHALUS-LUCII-ACANTHOCEPHALA-ON-INTERMEDIATE-HOST-SURVIVAL-AND/10.1645/GE-1093R.1.full — Acanthocephalus lucii: Asellus aquaticus intermediate host, perch definitive
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC4084987 — Polymorphus minutus: gammarids intermediate, mallard definitive host
+- https://frontiersinzoology.biomedcentral.com/articles/10.1186/s12983-015-0128-7 — Ligula intestinalis: copepod -> cyprinid (roach) -> piscivorous bird
+- https://www.schweizerbart.de/papers/archiv_hydrobiologie/detail/152/85849/The_three_hosts_of_the_Ligula_intestinalis_Cestoda_life_cycle_in_Lavernose_Lacasse_gravel_pit_France — Ligula hosts: Eudiaptomus gracilis copepod, great crested grebe definitive
+- https://keele-repository.worktribe.com/output/421333/ligula-intestinalis — Ligula: cormorants take infected roach selectively
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC1599786 — Schistocephalus solidus: cyclopoid copepod (Macrocyclops albidus) -> three-spined stickleback -> fish-eating bird
+- https://en.wikipedia.org/wiki/Triaenophorus_nodulosus — Triaenophorus nodulosus: Cyclops -> perch liver -> pike; Llyn Tegid perch study
+- https://www.cambridge.org/core/journals/journal-of-helminthology/article/on-the-species-of-diphyllobothrium-occurring-in-birds-and-their-relation-to-man-and-other-hosts/35AB6D42D39BEE7DF06F3B00305B8C19 — Diphyllobothrium in gulls caused trout epizootics in South Wales reservoirs
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC2620636/ — Diphyllobothrium life cycle: copepod first host, fish second, bird definitive
+- https://resolve.cambridge.org/core/journals/journal-of-helminthology/article/observations-on-cyathocephalus-truncatus-pallas-1781-cestoda-spathebothriidea-in-its-intermediate-and-definitive-hosts-in-a-trout-stream-north-wales/60265E819DC4C8611E65E0C62F4BA2FB — Cyathocephalus truncatus in Gammarus pulex and brown trout, North Wales
+- https://cambridge.org/core/journals/parasitology/article/on-the-bionomics-of-crepidostomum-metoecus-braun-1900-and-crepidostomum-farionis-muller-1784-trematoda-allocreadiidae/BC01DC633B46BEFF41F5F57C485F4CAB — Awachie: C. metoecus (Lymnaea peregra) and C. farionis (Pisidium casertanum), both via Gammarus pulex to brown trout, North Wales
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC6162956 — Crepidostomum review: C. farionis in Pisidium/Sphaerium with Ephemera danica as second host
+- https://en.wikipedia.org/wiki/Anguillicoloides_crassus — Anguillicola crassus: copepod intermediate, >30 fish species and tadpoles paratenic, eel swimbladder
+- https://www.cambridge.org/core/journals/parasitology/article/densitydependent-effects-of-anguillicola-crassus-nematoda-within-and-on-its-copepod-intermediate-hosts/97FC7E91E749ABC46F2E629F1CB05898 — A. crassus development in copepod intermediate hosts
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC5461737 — Phyllodistomum folium (syn. P. simile of bullhead): sphaeriid (Sphaerium, Pisidium) first hosts, fish urinary bladder
+- https://www.cambridge.org/core/journals/parasitology/article/distribution-of-eurasian-otter-biliary-parasites-pseudamphistomum-truncatum-and-metorchis-albidus-family-opisthorchiidae-in-england-and-wales/04349F6EB4784C18DCA30E9C32C038B1 — Pseudamphistomum truncatum: otter biliary fluke, abundant in south Wales; snail -> cyprinid -> otter
+- https://ask.ifas.ufl.edu/publication/FA184 — Argulus: direct single-host life cycle, eggs laid on hard surfaces
+- https://en.wikipedia.org/wiki/Argulus_foliaceus — Argulus foliaceus fish louse, freshwater fish ectoparasite
+- https://nemaplex.ucdavis.edu/Taxadata/G972S1.aspx — Cystidicola farionis: salmonid swimbladder nematode, amphipod intermediate hosts
+- https://birdsin.wales/wos-student-research-award-2021-winner-luke-beckett-for-long-term-population-recovery-of-dippers-cinclus-cinclus-in-urban-south-wales-in-relation-to-river-quality-and-prey-use/ — South Wales dippers: baetid/heptageniid mayflies, leuctrid/nemourid stoneflies, rhyacophilid/hydropsychid/limnephilid caddis
+- https://www.apis.ac.uk/node/995 — Welsh dippers and acid deposition; calcium-rich prey such as Gammarus in circumneutral streams
+- https://scilit.com/publications/a76c9d61eb9768fdc66fb7369890e887 — Welsh grey wagtails: adult Diptera ~55% of items; aquatic insects about a quarter
+- https://mammal.org.uk/british-mammals/otter — Otter diet: fish esp. eels and salmonids, crayfish seasonally, frogs in spring
+- https://www.kmae-journal.org/10.1051/kmae/2017004 — Hampshire Avon otters: small cyprinids, bullhead, stone loach, signal crayfish, amphibians
+- https://discovery-pp.ucl.ac.uk/10085829/1/Alderton_Malham_otters_Field_Studies.pdf — Malham otters: bullhead most frequent, then brown trout, frogs and toads
+- https://agris.fao.org/search/ar/records/65dfab3cb766d82b1802c097 — River Glaven otter diet change: more crayfish, trout, cyprinids, perch, birds and mammals
+- https://research.birmingham.ac.uk/en/publications/foods-brought-to-the-nest-by-breeding-kingfishers-alcedo-atthis-i — New Forest kingfishers: minnow most frequent prey; bullhead recorded
+- https://www.kmae-journal.org/articles/kmae/ref/2013/03/kmae130025/kmae130025.html — River Frome kingfishers: salmon 2.5% of nestling diet
+- https://scottishwildlifetrust.org.uk/?p=1752804 — Kingfisher pellets: minnow, bullhead, stickleback
+- https://scilit.com/publications/05776a9024ba78950828d808a77221ff — River Roding kingfishers: cyprinids main prey, minnow top, stickleback prominent
+- https://datazone.birdlife.org/species/factsheet/grey-heron-ardea-cinerea/text — Grey heron: fish and eels 10-25 cm core diet, plus amphibians, invertebrates
+- https://edenriverstrust.org.uk/library/grey-heron/ — Herons take amphibians, water voles, water birds, crayfish
+- https://staffprofiles.bournemouth.ac.uk/display/chapter/9569 — Wilson et al.: River Wye goosander ducklings ate mostly salmon, also trout and minnow
+- https://www.gov.scot/publications/analysis-bird-stomach-contents-final-report-goosander-cormorant-diet-four-scottish-rivers-2019-2020/pages/9 — Scottish rivers: goosander diet salmon and trout by mass; cormorant diet
+- https://www.bto.org/understanding-birds/birdfacts/red-breasted-merganser — Red-breasted merganser: piscivorous, hunts small fish inshore; winters at sea
+- https://www.cefas.co.uk/data-and-publications/publications/list/publication-abstract/?id=13805 — Cormorants at English/Welsh fisheries: small roach and perch by number, trout by weight
+- https://cdn.cyfoethnaturiol.cymru/e3mbmw33/nrw-evidence-report-591-a-synopsis-of-uk-and-european-cormorant-and-goosander-dietary-studies-final.pdf — NRW Evidence Report 591: synopsis of cormorant and goosander diet in Welsh rivers
+- https://birdfact.com/birds/little-egret — Little egret: small fish, amphibians, crustaceans, insects (water beetles, dragonfly nymphs)
+- https://dyfiospreyproject.com/node/1541 — Dyfi ospreys: ~50% grey mullet, 20% flounder, 20% trout, rest perch etc.
+- https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/animals/birds/sand-martin/ — Sand martin eats gnats and flies, hunting over water
+- https://en.wikipedia.org/wiki/Barn_swallow — Barn swallow: flying insects, large flies ~70% in breeding season, hunts over water
+- https://datazone.birdlife.org/species/factsheet/common-sandpiper-actitis-hypoleucos/text — Common sandpiper: insects, spiders, molluscs, crustaceans, annelids, occasional frogs/small fish
+- https://openpolar.no/Record/crwiley:10.1111%2Fj.1474-919x.1986.tb02089.x — Yalden 1986: breeding sandpiper diet mostly terrestrial prey; shingle edges important
+- https://gwct.org.uk/research/scientific-publications/1970-79/1978/street1978/ — Street 1978: mallard ducklings depend on insect larvae; adults largely vegetarian
+- https://en.wikipedia.org/wiki/Common_moorhen — Moorhen eats plant material and small aquatic animals
+- https://en.wikipedia.org/wiki/White_wagtail — White/pied wagtail: terrestrial and aquatic insects, flies most important, also fish fry
+- https://en.wikipedia.org/wiki/Black-headed_gull — Black-headed gull: opportunist on insects, fish, worms, crustaceans
+- https://en.wikipedia.org/wiki/Great_crested_grebe — Great crested grebe: mainly fish, plus crustaceans, insects, frogs, newts
+- https://en.wikipedia.org/wiki/American_mink — American mink British diet: ducks, moorhens, eels, crayfish, rabbits
+- https://ptes.org/invasive-american-mink-and-the-plight-of-britains-water-voles/ — Mink predation main driver of water vole decline; females enter burrows
+- https://www.biology.ox.ac.uk/node/2449141 — Mink predation determines water vole distribution in the Thames catchment
+- https://mammal.org.uk/british-mammals/water-vole — Water vole eats grasses and waterside vegetation (227 plant species)
+- https://www.mammal.org.uk/wp-content/uploads/2022/07/Water-Shrew-Fact-Sheet-v2.pdf — Water shrew: freshwater shrimp and caddis larvae main prey, occasional small fish/amphibians
+- https://en.wikipedia.org/wiki/Eurasian_water_shrew — Water shrew: Asellus, caddis and dipteran larvae most common aquatic prey
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC3842304 — Daubenton's bat DNA diet: Diptera (Chironomidae in 31/34 bats) and Trichoptera dominate
+- https://scite.ai/authors/daniel-a-flavin-bj9KGR — Irish riverside Daubenton's roosts: Chironomidae/Ceratopogonidae ~24%, Trichoptera ~26%
+- https://openpolar.no/Record/crwiley:10.1111%2Fj.1469-7998.1997.tb02804.x/Details — Barlow 1997: 55 kHz (soprano) pipistrelle on Chironomidae/Ceratopogonidae; 45 kHz (common) on Psychodidae, Anisopodidae, Muscidae
+- https://www.froglife.org/info-advice/amphibians-and-reptiles/common-frog-2/ — Common frog: tadpoles eat algae and water fleas; adults insects, slugs, worms
+- https://en.wikipedia.org/wiki/Common_toad — Common toad eats woodlice, slugs, beetles, spiders, worms; tadpoles noxious to fish
+- https://www.jerseybiodiversitycentre.org.je/article/palmate-newt-ecology — Palmate newt aquatic diet: planktonic crustaceans, leeches, caddis larvae, frog tadpoles
+- https://research.slu.se/en/publications/review-of-the-importance-of-aquatic-prey-for-riparian-arthropod-p/ — Review: Tetragnatha diets ~70% aquatic insects; free-hunting spiders and riparian beetles also use aquatic prey
+- https://doc.rero.ch/record/316613?ln=de — Paetzold et al.: riverbank lycosids Pardosa wagleri ~48%, Arctosa cinerea ~56% aquatic insects
+- https://meetingorganizer.copernicus.org/EGU2009/EGU2009-11877.pdf — Henshall, Sadler & Hannah: Bembidion atrocaeruleum on exposed riverine sediments tracks aquatic food
+- https://research.aber.ac.uk/en/publications/spatial-dynamics-of-beetles-living-on-exposed-riverine-sediments-/ — Bates et al. 2005: ERS beetles on upper River Severn, mid-Wales
+- https://research.ucc.ie/en/publications/diet-partitioning-in-sympatric-atlantic-salmon-and-brown-trout-in/ — Salmon parr eat benthic invertebrates; older trout take surface-drifting terrestrial invertebrates
+- https://scilit.com/publications/b5d42ed10649266e8bacf2ed1dafefb1 — Bullhead enclosure study: reduced Gammarus pulex and Baetis rhodani densities
+- https://eelregulations.co.uk/cont-009.php — Eels <300 mm eat invertebrates; larger eels take Gammarus, Asellus, crayfish, bullhead, stickleback
+- https://assets.publishing.service.gov.uk/media/5c3c72a340f0b67c4cfbd140/Appendix_3d_Review_of_available_literature_-_grayling.pdf — EA grayling review: benthic feeders; caddis, crustaceans, fly larvae, stonefly nymphs
+- https://nora.nerc.ac.uk/id/eprint/12422/ — Windermere pike diet: perch, roach, trout, pike
+- https://www.naturespot.org.uk/species/pike — Pike take fish, frogs, small mammals, ducklings
+- https://publications.naturalengland.org.uk/file/118013 — Life in UK Rivers: ecology of river, brook and sea lamprey; ammocoete filter feeding
+- https://www.naturalresourceswales.gov.uk/about-us/news-and-blogs/blogs/4rivers-monitoring-blog/?lang=en — Twaite shad spawn in the Wye, Usk and Tywi (SACs); three of four UK breeding rivers are Welsh
+- https://www.fao.org/4/ae997b/AE997B07.htm — Barbel introduced to River Severn in 1956 (509 fish from the Kennet)
+- https://irinsubria.uninsubria.it/bitstream/11383/2137940/1/Antognazza_et_al-2016-Ecology_and_Evolution.pdf — Barbel genetics: Severn stock spread to Welsh tributaries (Vyrnwy, Banwy, Tanat); Taff population
+- https://doi.org/10.1139/f80-017 — Vannote et al. 1980 River Continuum Concept: CPOM/FPOM/periphyton basal resources along a river
+- https://sac.jncc.gov.uk/habitat/H3260/ — JNCC H3260 rivers with Ranunculion fluitantis and Callitricho-Batrachion vegetation (water-crowfoot) and aquatic mosses
+- https://www.adfg.alaska.gov/static/species/disease/pdfs/fishdiseases/piscicola.pdf — Piscicola feeding on fish then dropping off to digest
+- https://www.fishbase.se/summary/Salmo-trutta.html — FishBase species summary for Salmo trutta (diet/life history)
+- https://www.fishbase.se/summary/Salmo-salar.html — FishBase species summary for Salmo salar (diet/life history)
+- https://www.fishbase.se/summary/Oncorhynchus-mykiss.html — FishBase species summary for Oncorhynchus mykiss (diet/life history)
+- https://www.fishbase.se/summary/Cottus-gobio.html — FishBase species summary for Cottus gobio (diet/life history)
+- https://www.fishbase.se/summary/Barbatula-barbatula.html — FishBase species summary for Barbatula barbatula (diet/life history)
+- https://www.fishbase.se/summary/Phoxinus-phoxinus.html — FishBase species summary for Phoxinus phoxinus (diet/life history)
+- https://www.fishbase.se/summary/Gasterosteus-aculeatus.html — FishBase species summary for Gasterosteus aculeatus (diet/life history)
+- https://www.fishbase.se/summary/Anguilla-anguilla.html — FishBase species summary for Anguilla anguilla (diet/life history)
+- https://www.fishbase.se/summary/Lampetra-fluviatilis.html — FishBase species summary for Lampetra fluviatilis (diet/life history)
+- https://www.fishbase.se/summary/Petromyzon-marinus.html — FishBase species summary for Petromyzon marinus (diet/life history)
+- https://www.fishbase.se/summary/Squalius-cephalus.html — FishBase species summary for Squalius cephalus (diet/life history)
+- https://www.fishbase.se/summary/Leuciscus-leuciscus.html — FishBase species summary for Leuciscus leuciscus (diet/life history)
+- https://www.fishbase.se/summary/Rutilus-rutilus.html — FishBase species summary for Rutilus rutilus (diet/life history)
+- https://www.fishbase.se/summary/Perca-fluviatilis.html — FishBase species summary for Perca fluviatilis (diet/life history)
+- https://www.fishbase.se/summary/Gobio-gobio.html — FishBase species summary for Gobio gobio (diet/life history)
+- https://www.fishbase.se/summary/Barbus-barbus.html — FishBase species summary for Barbus barbus (diet/life history)
+- https://www.fishbase.se/summary/Alosa-fallax.html — FishBase species summary for Alosa fallax (diet/life history)
+- https://www.fishbase.se/summary/Platichthys-flesus.html — FishBase species summary for Platichthys flesus (diet/life history)
+- https://www.fishbase.se/summary/Chelon-labrosus.html — FishBase species summary for Chelon labrosus (diet/life history)
+- https://en.wikipedia.org/wiki/Eustrongylidosis — Eustrongylides life cycle (excluded: no UK river evidence found)

@@ -3,8 +3,9 @@
     python build/load.py out/woodland_soil.jsonl --graph woodland_soil --turing-dir turing --port 6780 [--reload]
 
 LOAD JSONL only creates graphs (there is no DROP GRAPH), so --reload stops the server,
-removes turing/graphs/<graph>, restarts it and loads again. Only use it on this
-project's own turing dir.
+removes turing/graphs/<graph>, restarts it with the same command line it was running with
+(port, listen address, visualizer flags), reloads the graphs that were loaded, and loads
+again. Only use it on this project's own turing dir.
 """
 from __future__ import annotations
 
@@ -21,11 +22,31 @@ from turingdb import TuringDB, TuringDBException
 BIN = Path(sys.executable).parent / "turingdb"
 
 
-def server(cmd: str, turing_dir: Path, port: int) -> None:
+def server(cmd: str, turing_dir: Path, port: int, old: tuple[list[str], str] | None = None) -> None:
+    """Stop, or start: with `old` (the previous server's command line and working directory)
+    when known, so the restart keeps its listen address, visualizer and ports."""
+    if cmd == "start" and old:
+        subprocess.run(old[0], cwd=old[1], check=True, capture_output=True)
+        return
     args = [str(BIN), cmd, "-turing-dir", str(turing_dir)]
     if cmd == "start":
         args += ["-p", str(port), "-demon"]
     subprocess.run(args, check=cmd == "start", capture_output=True)
+
+
+def running_server(port: int) -> tuple[list[str], str] | None:
+    """Command line of the server listening on `port` (Linux /proc), with the binary as an absolute
+    path (a daemonised server's cwd is /, so a relative argv[0] cannot be resolved from it)."""
+    try:
+        out = subprocess.run(["ss", "-ltnpH", f"sport = :{port}"], capture_output=True, text=True).stdout
+        pid = out.split("pid=")[1].split(",")[0]
+        argv = [a.decode() for a in Path(f"/proc/{pid}/cmdline").read_bytes().split(b"\0") if a]
+        if not argv:
+            return None
+        argv[0] = str(Path(f"/proc/{pid}/exe").resolve())
+        return argv, "/"
+    except (IndexError, OSError):
+        return None
 
 
 def connect(port: int, wait: float = 30) -> TuringDB:
@@ -56,11 +77,15 @@ def main() -> None:
     if a.graph in c.list_available_graphs():
         if not a.reload:
             sys.exit(f"graph {a.graph} exists; pass --reload to rebuild it")
+        old = running_server(a.port)
+        was_loaded = [g for g in c.list_loaded_graphs() if g not in (a.graph, "default")]
         server("stop", td, a.port)
         time.sleep(1)
         shutil.rmtree(td / "graphs" / a.graph)
-        server("start", td, a.port)
+        server("start", td, a.port, old)
         c = connect(a.port)
+        for g in was_loaded:
+            c.load_graph(g)
 
     (td / "data").mkdir(exist_ok=True)
     staged = td / "data" / a.jsonl.name

@@ -2,13 +2,14 @@
 
 # EcoHack x TuringDB - quickstart guide and ready-to-use graph datasets
 
-Three ready-to-query graphs built from the EcoHack 2026 AI-track open datasets, running on [TuringDB](https://docs.turingdb.ai).
+Three ready-to-query graphs built from the EcoHack 2026 AI-track open datasets, plus one food web built from published diets to show how deep multi-hop questions can go. All run on [TuringDB](https://docs.turingdb.ai).
 
 | Graph | In one line | Size | Good for |
 |---|---|---|---|
 | [`norwood`](docs/norwood.md) | Who eats, pollinates or parasitises whom on one Somerset farm | 549 species, 1,728 links | Keystone species, extinction cascades, restoration planting |
 | [`woodland_soil`](docs/woodland_soil.md) | 84 woods and grasslands with soil microbes, plants, trees, insects and soundscape | 1.8k nodes, 17k edges | Land-use legacy, recovery after restoration, cheap monitoring |
 | [`welsh_rivers`](docs/welsh_rivers.md) | 26 years of river chemistry plus river invertebrates on the real river network | 205k nodes, 2.2M edges | Pollution tracing, cause and effect, speed at scale |
+| [`river_foodweb`](docs/river_foodweb.md) | A Welsh river food web from algae to otters, built from published diets (synthetic links) | 433 nodes, 2.3k edges | Food chains 5 to 6 links deep, parasites, pollution reaching top predators |
 
 Each graph joins several datasets so you can ask **multi-hop** questions that are painful in spreadsheets or SQL. Examples:
 - "If this plant disappears, which species lose all their food, and which parasitoids starve after them?"
@@ -16,7 +17,7 @@ Each graph joins several datasets so you can ask **multi-hop** questions that ar
 
 These run in milliseconds.
 
-## The three graphs
+## The graphs
 
 ### norwood: the farm food web
 
@@ -73,6 +74,21 @@ The graph covers three South Wales catchments:
 
 Questions: which discharges are upstream of a declining site? How many invertebrate sites does each mine outfall reach? What is the river distance from an outfall to a site? Where are the monitoring gaps? [Schema and details](docs/welsh_rivers.md).
 
+### river_foodweb: going deeper
+
+Norwood is a real survey, but it is small and its food chains stop after 2 links (plant, then aphid, then parasitoid wasp). To go deeper you can enrich it with other data sources, or build a new graph from open sources. `river_foodweb` is an example of the second:
+- 245 real Welsh river species, from algae and leaf litter to the otter, heron and dipper
+- feeding links generated from 248 published diet rules, ranked by how common each prey family is in the real Welsh surveys
+- 20 parasite life cycles, such as the eye fluke that passes from a snail to a fish to the bird that eats it
+
+The species and the rules are real and sourced. The individual links are generated, so read answers as "what the published diets imply".
+
+```
+(:Taxon)-[:EATS]->(:Taxon)       (:Parasite)-[:INFECTS {step}]->(:Taxon)       (:Taxon)-[:IN_FAMILY]->(:Family)
+```
+
+Questions: which food chains run 5 links from the otter down to algae? Which predators depend on pollution-sensitive mayflies and stoneflies? Which hosts do the most parasite life cycles pass through? It shares family names with `welsh_rivers`, so `queries/river_foodweb_join.py` takes a real site that lost families and shows which predators ate them. [Schema and details](docs/river_foodweb.md).
+
 ## Quick start
 
 Works on macOS 15+ with Apple silicon, and on Linux.
@@ -101,7 +117,7 @@ The first run imports the graphs, which takes about 10 seconds.
 Once it is running:
 
 - **Visualizer:** open http://localhost:8080, pick a graph, and explore.
-- **Example queries:** `python queries/run.py norwood`. Do the same for `woodland_soil` and `welsh_rivers`.
+- **Example queries:** `python queries/run.py norwood`. Do the same for `woodland_soil`, `welsh_rivers` and `river_foodweb`.
 - **Extinction cascade:** `python queries/norwood_cascade.py "Cirsium arvense"`.
 - **Your own Python:**
 
@@ -171,3 +187,4 @@ All data is open. See [CITATIONS.md](CITATIONS.md) for how to cite each source:
 - UKCEH/EIDC and NRW: Open Government Licence
 - KiEco via GBIF: CC BY 4.0
 - OS Open Rivers: Open Government Licence
+- river_foodweb: compiled for this repo from published sources, listed in `build/river_foodweb/SOURCES.md`

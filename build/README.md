@@ -22,6 +22,7 @@ cd build
 uv run python build_norwood.py ../out/norwood.jsonl
 uv run python build_woodland.py ../out/woodland_soil.jsonl
 uv run python build_rivers.py ../out/welsh_rivers.jsonl     # about 1 minute, 4 GB RAM
+uv run python build_river_foodweb.py ../out/river_foodweb.jsonl   # no download: reads river_foodweb/spec.json
 cd ..
 ```
 

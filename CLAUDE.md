@@ -17,6 +17,7 @@ Most users are scientists, not database people. Answer in plain language and sho
 | `norwood` | Farm food web: 549 species, 7 linked networks (pollinators, aphids, parasitoids, seed eaters, birds, rodents) | `docs/norwood.md` | `queries/norwood.cypher`, `queries/norwood_cascade.py` |
 | `woodland_soil` | 84 restoration, ancient and rewilding sites: soil microbes, plants, trees, insects, soundscape | `docs/woodland_soil.md` | `queries/woodland_soil.cypher` |
 | `welsh_rivers` | 1.8M river chemistry measurements, river invertebrates and the river network for 3 South Wales catchments | `docs/welsh_rivers.md` | `queries/welsh_rivers.cypher` |
+| `river_foodweb` | Welsh river food web, 245 species, links generated from published diets (synthetic: say so in answers) | `docs/river_foodweb.md` | `queries/river_foodweb.cypher`, `queries/river_foodweb_join.py` |
 
 Run examples: `uv run python queries/run.py <graph> [numbers]` (or plain `python` if TuringDB was installed with pip and uv is not installed).
 
